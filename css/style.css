@@ -1,0 +1,469 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+  "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
+  "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: .8px;
+  word-break: break-all;
+  color: #333;
+}
+
+figure {
+  padding: 0;
+  border: 2px solid #eeebeb;
+}
+
+a {
+  text-decoration: none;
+  color: #1ca9e3;
+}
+
+a img {
+  transition: opacity .3s;
+}
+
+a img:hover {
+  opacity: .8;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.pc-only {
+  display: block;
+}
+
+.sp-only {
+  display: none;
+}
+
+/*--------------------------------
+ 文字
+---------------------------------*/
+.heading-primary {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  line-height: 1;
+  display: inline-block;
+  letter-spacing: .2em;
+  text-transform: lowercase;
+  color: #000000;
+  border-bottom: 1px solid #000;
+}
+
+.section-heading {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section-lead {
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/*--------------------------------
+ レイアウト
+---------------------------------*/
+.wrapper {
+  background-color: #fff;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+/*--------------------------------
+ヘッダー
+---------------------------------*/
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 640px;
+  background-image: url(../img/own/benjamin-davies-JrZ1yE1PjQ0-unsplash.jpg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 100% 130%;
+  /* background-size: cover; */
+}
+
+.logo-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 32px;
+  line-height: 1;
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 88px;
+  font-weight: bold;
+  line-height: 1;
+  display: block;
+  letter-spacing: .1em;
+  color: #fff;
+}
+
+.logo-text {
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: .2em;
+}
+
+
+
+/*--------------------------------
+グローバルナビ
+---------------------------------*/
+.gnav {
+  z-index: 1;
+  font-family: "Cormorant Garamond", serif;
+  padding: 10px;
+}
+
+.gnav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gnav-item {
+  padding: 0 30px;
+}
+
+.gnav-link {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-transform: lowercase;
+  color: #333;
+}
+
+.gnav-link:hover {
+  border-bottom: 1px solid #000;
+}
+
+/* iOS対策 */
+.ios .gnav-link:hover {
+  opacity: 1;
+}
+
+.gnav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translate3d(0, 0, 0);
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 7px -3px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 7px -3px rgba(0, 0, 0, .1);
+}
+
+/*--------------------------------
+ Works
+---------------------------------*/
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -40px;
+}
+
+.works-item {
+  flex: 0 0 32.31552%;
+  margin-right: 1.52671%;
+  margin-bottom: 40px;
+}
+
+.works-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.works-body {
+  text-align: center;
+}
+
+.works-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.works-text {
+  font-size: 10px;
+}
+
+.works-url {
+  font-size: 10px;
+}
+
+/* .works-image {
+  width: 400px;
+  height: 272px;
+} */
+
+.works-image {
+  width: 100%;
+  height: 80%;
+}
+
+/*--------------------------------
+ About
+---------------------------------*/
+.about-section .inner {
+  max-width: 1000px;
+}
+
+.about-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-image-wrapper {
+  flex: 0 0 25%;
+  margin-right: 40px;
+}
+
+.about-image {
+    
+}
+
+.about-body {
+  flex: 1;
+
+  font-size: 20px;
+}
+
+.about-body p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/*--------------------------------
+ Skill
+---------------------------------*/
+.skill { 
+    margin: 0 auto;
+}
+
+.skills-ttl {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.skills-wrap {
+  display: flex;
+  justify-content: center;
+
+}
+
+.lang-logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 50px;
+}
+
+/*--------------------------------
+ Contact
+---------------------------------*/
+.contact-list {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contact-item {
+  width: 100px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.contact-name {
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+  color: #333;
+}
+
+.contact-image {
+  width: 50px;
+}
+
+.contact-text {
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact-text:hover {
+  font-weight: bold;
+}
+
+/*--------------------------------
+ Footer
+---------------------------------*/
+.footer {
+  background-color: #333;
+}
+
+.footer .inner {
+  padding: 30px;
+}
+
+.copyright {
+  font-size: 16px;
+  text-align: center;
+  color: #8c8c8c;
+}
+
+.page-top {
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgb(192, 190, 190);
+}
+
+/*media Queries 767
+----------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .pc-only {
+    display: none;
+  }
+
+  .sp-only {
+    display: block;
+  }
+
+  /* 文字 */
+  .heading-primary {
+    font-size: 32px;
+  }
+
+  /* レイアウト */
+  .section {
+    padding: 60px 0;
+  }
+
+  .section .inner {
+    padding: 0 15px;
+  }
+
+  .content {
+    margin-top: 40px;
+  }
+
+  /* ヘッダー */
+  .header {
+    height: 70vh;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .logo-name {
+    font-size: 16px;
+  }
+
+  .logo-title {
+    font-size: 40px;
+  }
+
+  .logo-text {
+    font-size: 10px;
+  }
+
+  /* グローバルナビ */
+  .gnav-list {
+    padding: 0 10px;
+  }
+
+  .gnav-link {
+    font-size: 12px;
+  }
+
+  .gnav-link:hover {
+    opacity: 1;
+  }
+
+  
+  /* Works */
+  .works-body {
+    text-align: left;
+  }
+
+  .works-title {
+    font-size: 10px;
+  }
+
+  .works-list {
+    justify-content: space-between;
+  }
+
+  .works-item {
+    flex: 0 0 48%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  /* About */
+  .about-item {
+    display: block;
+  }
+
+  .about-image-wrapper {
+    width: 100px;
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+
+}
+
+
